@@ -4,6 +4,8 @@ frontend:
     preBuild:
       commands:
         - npm ci --legacy-peer-deps
+        - npm run lint
+        - npm audit --audit-level=high
     build:
       commands:
         - npm run build
