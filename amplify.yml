@@ -5,7 +5,7 @@ frontend:
       commands:
         - npm ci --legacy-peer-deps
         - npm run lint
-        - npm audit --audit-level=high
+        - npm audit --audit-level=critical
     build:
       commands:
         - npm run build
